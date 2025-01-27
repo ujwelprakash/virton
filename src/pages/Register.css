@@ -1,0 +1,550 @@
+/* Global styling */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Main container */
+
+.register-page {
+    height: 1721px;
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header */
+
+.register-header {
+    height: 101px;
+    background-color: #043B64;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 54px;
+    position: relative;
+    color: white;
+}
+
+
+/* Logo */
+
+.header-logo {
+    position: relative;
+    top: -5px;
+    width: 165px;
+    height: 69px;
+    opacity: 1;
+}
+
+
+/* Buttons container */
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 54px;
+    top: 28px;
+}
+
+
+/* Login box */
+
+.login-box {
+    width: 115.4px;
+    height: 33px;
+    border-radius: 2px 0px 0px 0px;
+    background-color: #ffffff;
+    color: #043B64;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+
+/* Signup box */
+
+.signup-box {
+    width: 121.92px;
+    height: 33px;
+    border-radius: 2px 0px 0px 0px;
+    background-color: #043B64;
+    color: white;
+    border: 2px solid #0056b3;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+
+/* Hover effects */
+
+.login-box:hover,
+.signup-box:hover {
+    background-color: #043B64;
+    color: #ffffff;
+}
+
+
+/* Main content */
+
+.register-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+
+/* Content wrapper */
+
+.register-content {
+    display: flex;
+    width: 1262px;
+    height: 1084px;
+    gap: 0px;
+    max-width: 90%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+/* Left side: Image */
+
+.register-image {
+    width: 618px;
+    height: 1084px;
+    background-size: cover;
+    border-radius: 23.97px 0px 0px 0px;
+    opacity: 1;
+}
+
+.register-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Main container for the form */
+
+
+/* Main container for the form */
+
+.register-form-container {
+    background-color: #043B64;
+    flex: 1;
+    padding: 25px;
+    /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    /* Slightly wider width */
+    height: auto;
+    /* Dynamic height */
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+
+/* Form Heading */
+
+.sign-up {
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    /* Balanced font size */
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    /* Slightly tighter margin */
+    position: relative;
+    top: -50px;
+}
+
+
+/* Subheading Text */
+
+.txtone {
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    /* Slightly larger text */
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    /* Reduced margin */
+    position: relative;
+    top: -50px;
+}
+
+
+/* Form Styling */
+
+.register-form {
+    width: 100%;
+    max-width: 450px;
+    /* Wider form width */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* Reduced spacing between fields */
+}
+
+
+/* Name Container */
+
+.name-container {
+    display: flex;
+    gap: 20px;
+    /* Reduced gap between First Name and Last Name */
+    width: 100%;
+}
+
+
+/* First Name and Last Name Fields */
+
+.first-name,
+.last-name {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* Tighter space between label and input */
+}
+
+
+/* Other Input Fields */
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* Tighter space between label and input */
+}
+
+
+/* Input Field Styling */
+
+input {
+    height: 28px;
+    /* Reduced height */
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+}
+
+
+/* Labels */
+
+.input-label {
+    font-size: 12px;
+    /* Slightly smaller font size */
+    font-weight: 500;
+    color: white;
+}
+
+
+/* Button */
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    .register-form-container {
+        width: 95%;
+        padding: 15px;
+    }
+    .register-form {
+        max-width: 100%;
+    }
+    .sign-up {
+        font-size: 26px;
+        /* Smaller font size for headings on mobile */
+    }
+    .txtone {
+        font-size: 11px;
+    }
+}
+
+
+/* Buttons Row */
+
+.buttons-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.register-footer {
+    height: 331px;
+    background-color: #043B64;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    flex-direction: column;
+    position: relative;
+}
+
+.footer-logo {
+    width: 279px;
+    height: 117px;
+    position: absolute;
+    top: 16px;
+    left: 91px;
+    opacity: 1;
+    /* Visible */
+}
+
+.footer-description {
+    width: 435px;
+    height: 81px;
+    position: absolute;
+    top: 136px;
+    left: 95px;
+    gap: 0px;
+    opacity: 1;
+    /* Visible */
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.logoimportant {
+    width: 460.71px;
+    height: 115px;
+    top: -50px;
+    left: 383px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    position: relative;
+}
+
+.imp {
+    position: relative;
+    width: 181px;
+    height: 33px;
+    left: -80px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.contact {
+    position: relative;
+    width: 90px;
+    height: 24px;
+    left: -80px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.privacy {
+    position: relative;
+    width: 159px;
+    height: 24px;
+    left: -80px;
+    top: 0px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.terms {
+    position: relative;
+    width: 159px;
+    height: 24px;
+    left: 200px;
+    top: -120px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.contact-support {
+    position: relative;
+    width: 159px;
+    height: 24px;
+    left: 200px;
+    top: -120px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.footer-facebook {
+    position: relative;
+    width: 30.12px;
+    height: 30px;
+    left: 29px;
+    top: -110px;
+    gap: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+
+/* Terms and Conditions */
+
+.terms-container {
+    display: flex;
+    align-items: center;
+    /* Align checkbox and label vertically */
+    margin-top: 15px;
+    /* Add some spacing from the inputs above */
+}
+
+.terms-container input[type="checkbox"] {
+    margin-right: 8px;
+    /* Add space between the checkbox and the label */
+    height: 15px;
+    /* Adjust the size */
+    width: 17px;
+}
+
+.terms-label {
+    font-size: 15px;
+    /* Adjust font size */
+    color: white;
+}
+
+.terms-label a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/* Button and Terms Row */
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+    /* Space between buttons and terms */
+}
+
+
+/* Buttons in the same row */
+
+.button-container .buttons-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* Space between Register and Login buttons */
+    width: 100%;
+}
+
+
+/* Register Button */
+
+.submit-button {
+    width: 257.05px;
+    height: 39.93px;
+    border-radius: 2.42px 0px 0px 0px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: 1.35px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Login Button */
+
+.login-button {
+    width: 271.56px;
+    height: 39.93px;
+    border-radius: 2.42px 0px 0px 0px;
+    border: 1.21px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #043B64;
+    color: #ffffff;
+}
+
+.whiteline {
+    position: relative;
+    top: 50px;
+    width: 1250px;
+    height: 3px;
+    background-color: #ffffff;
+}
